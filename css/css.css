@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Fondo degradado */
+    min-height: 100vh;
+    color: white;
+}
+
+/* Encabezado con mejor contraste */
+header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Menú de navegación con mejor estética */
+nav {
+    background: #34495e;
+    padding: 15px;
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: #f1c40f !important;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+}
+
+/* Contenedor con un color más agradable */
+.contenedor {
+    background: #ecf0f1; /* Suave color gris claro */
+    display: grid;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Contenido dentro del contenedor con mejor contraste */
+.content {
+    background: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.content:hover {
+    transform: scale(1.05);
+}
+
+/* Pie de página mejorado */
+footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.2rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsivo: Tablets */
+@media (max-width: 768px) {
+    header {
+        font-size: 2rem;
+    }
+    nav {
+        text-align: center;
+    }
+    .contenedor {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+    .content {
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsivo: Teléfonos */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.5rem;
+    }
+    nav a {
+        display: block !important;
+        margin: 10px;
+        font-size: 1.2rem;
+    }
+    .contenedor {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .content {
+        font-size: 1rem;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
